@@ -1,0 +1,40 @@
+{
+    "products": [
+      {
+        "name": "Tacos",
+        "price": "5",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPxJ0cYO3OtAs7zZGfjCVP-mPzW4sQz3mxijVIVyZ15HgiUKc3I1pr8vjybvLnx4aC9V8HYo0PnDbGPPYLzUvtdnMOSTkDw8I3ds7khPsf",
+        "id": 1
+      },
+      {
+        "name": "Arepas",
+        "price": "5",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyaFiK4KA0nHTPKfBWc8Z9-MckIVwD8Z1s0Q&s",
+        "id": 2
+      },
+      {
+        "name": "Micheladas",
+        "price": "5",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmwiTtxi32uYdXZKzRQ8HS_YYlNKhNN5dqSg&s",
+        "id": 3
+      },
+      {
+        "name": "Patacones",
+        "price": "5",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwx9X7QRofKAZY1wsWdL5RA00POHhtLcbJAA&s",
+        "id": 5
+      },
+      {
+        "name": "Chilaquiles",
+        "price": "5",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiPX7dk6e-rLoRPTY896ydG_ELe1UY2XMWmg&s",
+        "id": 6
+      },
+      {
+        "name": "Choripán",
+        "price": "5",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCNKyaY1MKi5lOvwBUAczmLtBw160hIg05NA&s",
+        "id": 7
+      }
+    ]
+  }
