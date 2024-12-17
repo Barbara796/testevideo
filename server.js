@@ -5,14 +5,25 @@ const path = require('path');
 const server = jsonServer.create();
 const middlewares = jsonServer.defaults();
 
-// Função para carregar os dados do db.json em memória
+// Caminho original do db.json
+const dbPath = path.join(__dirname, 'db.json');
+
+// Caminho temporário em /tmp
+const tmpDbPath = path.join('/tmp', 'db.json');
+
+// Copiar o db.json para o diretório temporário (se ainda não existir)
+if (!fs.existsSync(tmpDbPath)) {
+  fs.copyFileSync(dbPath, tmpDbPath);
+  console.log('Arquivo db.json copiado para /tmp');
+}
+
+// Função para carregar os dados do db.json em /tmp
 const loadData = () => {
-  const dbPath = path.join(__dirname, 'db.json'); // Caminho para db.json
-  const rawData = fs.readFileSync(dbPath, 'utf-8'); // Lê o conteúdo do arquivo
-  return JSON.parse(rawData); // Converte o conteúdo em objeto JSON
+  const rawData = fs.readFileSync(tmpDbPath, 'utf-8');
+  return JSON.parse(rawData);
 };
 
-const router = jsonServer.router(loadData()); // Carrega os dados em memória
+const router = jsonServer.router(loadData()); // Inicializa o router com os dados em memória
 
 server.use(middlewares);
 server.use(router);
